@@ -686,8 +686,19 @@ img {
 }
 
 .project-showcase {
-    max-width: 760px;
+    max-width: 1180px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    align-items: start;
+}
+
+@media (max-width: 880px) {
+    .project-showcase {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
 }
 
 .project-card {
